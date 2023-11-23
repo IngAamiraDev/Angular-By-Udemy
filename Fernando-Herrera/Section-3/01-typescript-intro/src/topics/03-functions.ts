@@ -19,10 +19,36 @@ function multiplay ( firtsNumber: number, secondNumber?: number, base: number = 
     return firtsNumber * base;
 }
 
+/**
 const result: number = addNumbers(1, 2)
 const result2: string = addNumberArrow(1, 2)
 const multiplayResult: number = multiplay(5)
-
 console.log({result, result2, multiplayResult})
+ */
+
+interface Character {
+    name: string;
+    hp: number;
+    showHp: () => void;
+}
+
+const healCharacter = ( character: Character, amount: number ) => {
+    
+    character.hp += amount;
+
+}
+
+const strider: Character = {
+    name: 'Strider',
+    hp: 50,
+    showHp() {
+        console.log(`Puntos de vida ${ this.hp }`)
+    }
+}
+
+healCharacter( strider, 10 );
+healCharacter( strider, 30 );
+
+strider.showHp();
 
 export{};
