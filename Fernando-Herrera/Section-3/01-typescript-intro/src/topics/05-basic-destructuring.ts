@@ -1,5 +1,5 @@
-/**La desestruturación, se usa para extraer piezas de algún objeto
- * Se puede aplicar:
+/**La desestructuración, se usa para extraer piezas de algún objeto/arreglo.
+ * Se puede aplicar en:
      * Objetos
      * Importaciones y exportaciones en los Módulos
      * Argumentos de las funciones
@@ -30,12 +30,20 @@ const audioPlayer: AudioPlayer = {
 
 //const song = 'New Song';
 
-/** Estructura de la desestruturación*/
+/** Desestructuración de Objetos*/
 const { song:anotherSong, songDuration:duration, details } = audioPlayer;
 const { author } = details;
 
+/*
 console.log('Song: ', anotherSong);
 console.log('Duration: ', duration);
 console.log('Author: ', author);
+*/
+
+/**Desestructuración de Arreglos */
+//const [Goku, Vegeta, Trunks]: string[] = ['Goku', 'Vegeta', 'Trunks'];
+const [, , Trunks = 'Not found']: string[] = ['Goku', 'Vegeta'];
+
+console.log('Personaje 3: ', Trunks);
 
 export{}
