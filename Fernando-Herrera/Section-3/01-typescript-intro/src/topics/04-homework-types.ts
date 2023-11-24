@@ -10,7 +10,7 @@ interface SuperHero {
 }
 
 interface Address {
-    street: string;
+    street: string; /** F2 reeplace */
     country: string;
     city: string;
 }
