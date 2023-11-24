@@ -6,10 +6,10 @@
  * Permite indicar a los obejetos cómo pueden lucir o qué caracteristicas pueden tener
  */
 interface Character {
-    name: String;
+    name: string;
     hp: number;
     skills: string[];
-    hometown?: string; /**Opcional */
+    hometown?: string; /**(?) Opcional */
 }
 
 const strider: Character = {

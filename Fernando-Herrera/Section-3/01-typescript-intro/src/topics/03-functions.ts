@@ -32,10 +32,8 @@ interface Character {
     showHp: () => void;
 }
 
-const healCharacter = ( character: Character, amount: number ) => {
-    
+const healCharacter = ( character: Character, amount: number ) => {    
     character.hp += amount;
-
 }
 
 const strider: Character = {
