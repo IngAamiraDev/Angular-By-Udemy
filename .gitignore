@@ -59,3 +59,6 @@ dist-ssr
 !.vscode/tasks.json
 !.vscode/launch.json
 .history/*
+
+# Angular
+**.angular

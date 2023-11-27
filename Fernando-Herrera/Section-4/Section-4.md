@@ -44,5 +44,33 @@ Las aplicaciones Angular están organizadas en módulos, que son bloques funcion
 Por defecto los proyectos trabajan sin módulos (module-less), sin emabrgo, se puede configurar de la manera tradicional:
 - Ejecutar `ng new <name-project> --standalone false`
 
+## Estructura de un proyecto en Angular
+
+![Modules](./imgs/modules.png)
+
+De arriba hacia abajo:
+- **.angular:** Manejar la caché de la aplicación
+- **node_modules:** Todo proyecto de Javascript posee este directorio donde se almacenan las librerías y dependencias que se descarguen con NPM.
+- **src:** Directorio principal del proyecto donde encontramos:
+    - **app:** Directorio donde guardaremos todo el código fuente de Angular.
+    - **assets:** Directorio para imágenes y otros recursos que la app necesita.
+    - **favicon.ico:** Ícono por defecto que tendrá la pestaña del navegador.
+    - **index.html:** Archivo HTML principal desde donde se construye toda la aplicación.
+    - **main.ts:** Archivo principal para la configuración de Angular.
+    - **styles.scss:** Archivo principal de estilos.
+    - **test.ts:** Archivo principal para lanzar el ambiente de pruebas de Angular.
+- **.editorconfig:** Permite autoformatear los archivos, espacios, indentación, etc. Hay que tener instalado la extensión en el editor.
+- **.gitignore:** Indicarle a GIT qué archivos/directorios ignorar.
+- **angular.json:** Archivo principal con toda la configuración del proyecto Angular.
+- **package-lock.json:** Describe el las dependencias exactas que se generaron en la instalación del proyecto.
+- **package.json:** Archivo para el manejo de dependencias, scripts y metadatos relevantes para el proyecto.
+- **README.md:** Archivo markdown para la documentación del proyecto.
+- **tsconfig.app.json:** Archivo principal para la configuración de TypeScript.
+- **tsconfig.json:** Extensión con más configuraciones de TypeScript.
+- **tsconfig.spec.json:** Configuración de TypeScript pero para el ambiente de pruebas.
+
+## App Component
+
 ## Recursos Adicionales
-- [Repo referencia](https://github.com/Klerith/angular-bases)
+- [Repo Referencia](https://github.com/Klerith/angular-bases)
+- [File Structure](https://angular.io/guide/file-structure)
