@@ -1,5 +1,16 @@
 # Sección 3: Bases de TypeScript
 
+## Temas de la sección
+1. Tipos básicos
+2. Objetos, arreglos e interfaces
+3. Funciones y sus argumentos
+4. Desestructuración de arreglos y objetos
+5. Importaciones y exportaciones
+6. Clases, constructores
+7. Tipos genéricos
+8. Decoradores
+9. Encadenamiento opcional
+
 ## Warnings
 - Cannot redeclare block-scoped variable ... -> `export{};` -> Para indicar que es un módulo
 

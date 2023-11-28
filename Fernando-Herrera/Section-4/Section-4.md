@@ -1,6 +1,16 @@
 # Sección 4: Angular
 Angular es un framework de desarrollo de aplicaciones web desarrollado y mantenido por Google. Es un framework de código abierto y se utiliza para construir aplicaciones web de una sola página (SPA) y aplicaciones empresariales complejas. Angular proporciona un conjunto de herramientas y bibliotecas que facilitan el desarrollo, la prueba y el mantenimiento de aplicaciones web robustas y escalables.
 
+## Temas de la sección
+1. Crear proyectos de Angular
+2. Explicar cada archivo y directorio de un proyecto
+3. Componentes
+4. Módulos
+5. One way data binding
+6. Uso del AngularCLI - Angular Command Line Interface
+7. Directivas creadas por Angular
+8. ngIf y ngIf-else
+
 ## Framework
 - Marco de trabajo estandarizado
 - Viene con todo lo que se necesita
