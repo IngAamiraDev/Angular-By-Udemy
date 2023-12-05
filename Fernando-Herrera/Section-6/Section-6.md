@@ -18,16 +18,36 @@ El proceso de despliegue en otros servidores es virtualmente el mismo, tomar nue
 ## GitHub Pages
 
 ### Configurar proyecto de Angular
-1. Ejecutar `npm build` para generar los archivos de producción.
+1. Ejecutar `ng build` para generar los archivos de producción.
 2. Mover la carpeta generada por el Build a la raiz del proyecto y renombrar por "docs".
+
 ![Folder Docs](./imgs/docs.png)
+
 3. En **Github** configurar el Build and deployment en la opción de Branch con "**main**" y "**/docs**"
+
 ![Branch](./imgs/branch.png)
-5. En la carpeta del proyecto ejecutar los comandos de npm:
-    - `npm i del-cli --save-dev` -> Para eliminar archivos/directorios.
-    - `npm i copyfiles --save-dev` -> Para copiar archivos/directorios.
-6. Modificar el archivo **package.json** en la opción de scripts
-7. Ejecutar el comando npm run build build:github
+
+5. Instalar unas dependencias de desarrollo en la carpeta del proyecto:
+    - Ejecutar `npm i del-cli --save-dev` -> Para eliminar archivos/directorios.
+    - Luego, ejecutar `npm i copyfiles --save-dev` -> Para copiar archivos/directorios.
+6. Modificar el archivo **package.json** agregar las siguientes líneas en la opción de scripts
+```json
+  "scripts": {
+    "build:href": "ng build --base-href ./",
+    "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist",
+    "delete:docs": "del docs",
+    "copy:dist": "copyfiles dist/gifs-app/* ./docs -f"
+  }
+```
+
+![Scripts](./imgs/scripts.png)
+
+7. Guardar cambios
+8. Ejecutar el comando `npm run build:github`
+
+![Run](./imgs/run.png)
+
+![Final](./imgs/final.png)
 
 ## Comandos utilizados
 - `ng build` -> Para generar el Build de producción
