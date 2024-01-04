@@ -30,9 +30,38 @@ PrimeNG es un paquete de componentes estilizados que contienen funcionalidades b
 Recuerden que PrimeNG no es el único, hay muchos pero la mayoría funcionan de formas similares, importando módulos, por eso mi objetivo de entrenarlos bastante bien con el manejo de módulos en todo momento para que nos familiaricemos con esta métodología.
 
 ## Notas Adicionales
-- 
+- Pipe, es un objeto que permite transformar de manera visual la información que se muestra en pantalla sin mutar la data real.
+- Se recomienda crear módulos personalizados toda vez que se vayan a usar en la aplicación y hacer el export para su uso.
+
+```typescript
+//typescript
+import { NgModule } from '@angular/core';
+
+import { MenubarModule } from 'primeng/menubar';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+import { FieldsetModule } from 'primeng/fieldset';
+import { PanelModule } from 'primeng/panel';
+
+@NgModule({
+  exports: [
+    ButtonModule,
+    CardModule,
+    FieldsetModule,
+    MenubarModule,
+    PanelModule,
+  ]
+})
+export class PrimeNgModule { }
+```
+
+- Si algún componente tiene la palabra Module, va en los imports de módulo principal
+- i18n. Sistemas de internacionalización
+
+
 
 ## Recursos Adicionales
-- [Repo Countries Sec 11]()
-- [Pipe](https://angular.io/api?query=pipe)
+- [Repo Countries Sec 11](https://github.com/Klerith/angular-pipe-app/tree/fin-seccion-11)
+- [Pipes in Angular](https://angular.io/api?query=pipe)
 - [PrimeNG](https://primeng.org/)
+- [PrimeFlex](https://primeflex.org/)
