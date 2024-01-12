@@ -19,7 +19,8 @@ Por ahora me interesa que dominemos el flujo de información y validaciones de l
 - Se recomienda tener la validaciones en un archivo de TS centralizado ('./src/app/shared/validators/validators.ts').
 - Crear funciones pequeñas con características espesíficas.
 - Las validaciones de ER son asincronas.
-- // import * as customValidators from '../../../shared/validators/validators'; (Para importar todo)
+- // import * as customValidators from '../../../shared/validators/validators'; (Para importar todo, con {name} para algo en particular)
+- Las validaciones síncronas, son una función o un método que devuelven un objeto o un Observable
 
 ## Commands
 - 
