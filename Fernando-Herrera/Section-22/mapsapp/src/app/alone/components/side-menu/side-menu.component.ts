@@ -7,7 +7,6 @@ interface MenuItem {
   route: string;
 }
 
-
 @Component({
   standalone: true,
   selector: 'side-menu',

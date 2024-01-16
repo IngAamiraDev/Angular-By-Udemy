@@ -18,4 +18,3 @@ Esta directiva que crearemos, es de uso real y dará una buena idea de qué pode
 
 ## Recursos Adicionales
 - [Repo Sec 23](https://github.com/Klerith/angular-signal-directives/tree/fin-seccion-23)
-**Nota:** Revisar el README.md
