@@ -20,7 +20,7 @@ const audioPlayer: AudioPLayer = {
     }
 }
 
-
+/*
 //Desestructuración de Arreglos
 const song = `New Song`;
 
@@ -30,6 +30,7 @@ const {
     details 
 } = audioPlayer
 const { author } = details
+*/
 
 /*
 console.log('Song: ', anotherSong);

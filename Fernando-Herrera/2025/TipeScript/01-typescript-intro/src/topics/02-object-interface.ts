@@ -5,7 +5,6 @@ interface Character{
     hp: number;
     skills: string[];
     hometown?: string;
-
 }
 
 const strider: Character = {
