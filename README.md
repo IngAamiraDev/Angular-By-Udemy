@@ -19,7 +19,6 @@
     │── Infraestructure/
         │── Driven Adapters/
         │── Helpers/
-        │── Entry Points/
     │── Presentation(UI)/
         │── Main/
         │── Pages/
@@ -34,4 +33,4 @@
 ## Git
 
 - `git pull`
-- `git clone -b "fin-seccion-07" "https://github.com/DevTalles-corp/angular-gif-app.git" seccion-07`
+- `git clone -b fin-seccion-08 https://github.com/DevTalles-corp/angular-gif-app.git seccion-08`

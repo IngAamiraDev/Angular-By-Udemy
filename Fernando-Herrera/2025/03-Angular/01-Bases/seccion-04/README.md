@@ -57,3 +57,16 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Temas puntuales
+- Señales
+- Estado
+- Propiedades
+- Rutas
+- Métodos
+- ventos
+- Cambios en el DOM
+- Cada archivo y directorio de un proyecto
+
+El objetivo es tener una introducción a conceptos básicos y algunos no tan básicos de Angular, para comenzar a familiarizarnos y aprender esta tecnología.
+Recuerden que cada persona tiene diferentes formas de aprender. Para algunos puede ser más fácil que para otros, pero lo importante es avanzar paso a paso y seguir adelante.

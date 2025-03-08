@@ -57,3 +57,22 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+## Temas puntuales
+
+- RouterLink
+- RouterLink Active
+- Nuevo control flow
+- @for
+- @if
+- ngClass - ngStyle - Alternativas
+- Comunicación entre componentes
+- Inputs / outputs (Como señales)
+- Servicios en Angular
+- Efectos y LocalStorage
+- LinkedSignal
+- HashRouter
+- Despliegues
+
+Es una sección bastante completa que nos ayudará mucho a comprender el funcionamiento de Angular.
