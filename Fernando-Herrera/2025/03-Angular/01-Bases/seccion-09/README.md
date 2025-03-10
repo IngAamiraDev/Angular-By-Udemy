@@ -21,4 +21,6 @@ Este un proyecto de Angular.
 El objetivo es armar la aplicación que luego haremos funcionar.
 
 ## Recursos Adicionales
+- [Tailwind CSS with Angular](https://tailwindcss.com/docs/installation/framework-guides/angular)
 - [DaisyUI](https://daisyui.com/components/hero/)
+- [Angular coding style guide](https://angular.dev/style-guide#dont-prefix-output-properties)
