@@ -12,4 +12,4 @@
 
 ## Git
 - `git pull`
-- `git clone -b fin-seccion-08 https://github.com/DevTalles-corp/angular-gif-app.git seccion-08`
+- `git clone -b fin-seccion-09 https://github.com/DevTalles-corp/angular-country-app.git seccion-09`
