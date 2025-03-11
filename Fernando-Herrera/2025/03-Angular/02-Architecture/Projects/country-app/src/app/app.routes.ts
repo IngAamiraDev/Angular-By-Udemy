@@ -1,11 +1,10 @@
 import { Routes } from '@angular/router';
-import { CountryLayoutComponent } from './presentation/main/layout/CountryLayout.component';
-import { HomePageComponent } from './presentation/pages/home-page/home-page.component';
-import { ByCapitalPageComponent } from './presentation/pages/by-capital-page/by-capital-page.component';
-import { ByCountryPageComponent } from './presentation/pages/by-country-page/by-country-page.component';
-import { ByRegionPageComponent } from './presentation/pages/by-region-page/by-region-page.component';
-import { CountryPageComponent } from './presentation/pages/country-page/country-page.component';
-
+import { CountryLayoutComponent } from '../app/presentation/shared/layouts/country-layout/country-layout.component';
+import { HomePageComponent } from './presentation/home/home-page/home-page.component';
+import { SearchByCapitalComponent } from '../app/presentation/features/country/screens/search-by-capital/search-by-capital.component';
+import { SearchByCountryComponent } from '../app/presentation/features/country/screens/search-by-country/search-by-country.component';
+import { SearchByRegionComponent } from '../app/presentation/features/country/screens/search-by-region/search-by-region.component';
+import { CountryDetailsComponent } from './presentation/features/country/screens/country-details/country-details.component';
 export const routes: Routes = [
 
   {
@@ -19,20 +18,20 @@ export const routes: Routes = [
     children: [
       {
         path: 'by-capital',
-        component: ByCapitalPageComponent,
+        component: SearchByCapitalComponent,
       },
       {
         path: 'by-country',
-        component: ByCountryPageComponent,
+        component: SearchByCountryComponent,
       },
       {
         path: 'by-region',
-        component: ByRegionPageComponent,
+        component: SearchByRegionComponent,
       },
 
       {
         path: 'by/:code',
-        component: CountryPageComponent,
+        component: CountryDetailsComponent,
       },
 
       {
